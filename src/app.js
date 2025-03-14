@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 app.use('/payment', paymentRoutes);
 
 // Inicia o servidor principal
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Servidor rodando na porta ${port}`);
+const port = process.env.PORT;
+app.listen(port, '0.0.0.0', () => {
+  console.log('Aplicação rodando na porta 3003');
 });
