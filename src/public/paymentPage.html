@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento Mercado Pago</title>
+  <link rel="stylesheet" href="./css/styles.css">  <!-- Caminho para o arquivo CSS -->
+</head>
+<body>
+  <h1>Complete seu pagamento com o Mercado Pago</h1>
+  <h3>Assista Corinthians x Bahia em Live no TELEGRAM</h3>
+  <!-- Formulário para inserir o e-mail -->
+  <div class="form-container">
+    <label for="email">Digite seu e-mail:</label>
+    
+    <input type="email" id="email" placeholder="Seu e-mail" required />
+    <p><strong>Valor: R$ <span id="valorPagamento">R$ 1,00</span></strong></p> <!-- Exibe o valor fixo -->
+    <button class="btn" id="generateBtn">Gerar QR Code</button>
+  </div>
+  
+  <!-- Exibição do QR Code gerado -->
+  <div class="qrcode" id="qrcodeContainer" style="display: none;">
+    <img id="qrcodeImage" src="" alt="QR Code para pagamento" width="300" />
+  </div>
+
+  <!-- Link para o pagamento -->
+  <div id="paymentLink" style="display: none;">
+    <a id="paymentUrl" href="#" target="_blank"></a>
+    <p>Escaneie o código com seu celular para fazer o pagamento:</p>
+    <p>1 minuto após o pagamento ser aprovado ira receber um email com o link da transmissão</p>
+    <p style="font-style: italic;">Confira caixa de entrada e Spam ou Lixo eletronico</p>
+    </a>
+  </div>
+
+  <script src="/js/script.js"></script> <!-- Caminho para o arquivo JS -->
+</body>
+</html>
